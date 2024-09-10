@@ -1,0 +1,90 @@
+
+body > .main-section {
+    width: 100%;
+    height: auto;
+}
+
+.content-container {
+    width: 80%;
+    height: calc(100vh - 4rem);
+    position: relative;
+    overflow: hidden;
+}
+
+.floating-button {
+    position: fixed;
+    font-size: 1.1rem;
+    height: 2.2rem;
+    border-radius: 10px;
+    background-color: var(--color-primary);
+    color: black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    right: 2rem;
+    bottom: 1rem;
+    box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.3);
+    /*transition: 200ms;*/
+}
+
+.perform-button {
+    bottom: 4.2rem;
+}
+
+.perform-button:hover,
+.floating-button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.main-overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 11;
+    overflow-y: auto;
+}
+
+.ov-no-align {
+    align-items: baseline;
+}
+
+.table-form-container {
+    position: relative;
+    background-color: white;
+    box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+
+.overlay-close-button {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    color: black;
+}
+
+.overlay-close-button > span {
+    font-size: 2rem;
+}
+
+.overlay-not-active {
+    display: none;
+}
+
+@media (max-width: 1080px) {
+
+    .floating-button {
+        right: 1rem;
+    }
+
+    body > .main-section {
+        position: relative;
+        top: 4rem;
+    }
+
+    .content-container {
+        min-width: 100%;
+        width: 100% !important;
+        overflow: unset;
+    }
+
+}

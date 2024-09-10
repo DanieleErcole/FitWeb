@@ -1,0 +1,209 @@
+:root {
+    font-size: 16px;
+    --color-text: #FCFDFC;
+    --color-text-grey: #aaaaaa;
+    --color-primary: #FFD202;
+    --color-primary-dark: #F0C600;
+    --color-text-primary: #625100;
+    --color-primary-transparent: rgba(255, 210, 2, .1);
+    --color-primary-transparent-2: rgba(231, 190, 7, 0.16);
+    --color-secondary: #28292b;
+    --color-secondary-t: rgba(22, 22, 22, 0.83);
+    --color-tertiary: #818287;
+    --color-tertiary-dark: #6a6a6b;
+    --color-tertiary-dark-t: rgba(200, 200, 200, .1);
+    --color-background: #FFFFFF;
+    --color-not-exer: #84959C;
+    --color-white-1: #e5e5e5;
+    --color-white-2: #c9c9c9;
+    --color-block-border: #969696;
+    --color-block-max: #A2FF82;
+    --color-block-medium: #FFB782;
+    --color-block-minimum: #FF8375;
+    --color-btn-disabled: #505050;
+    --color-btn-disabled-text: #a8a4a4;
+    --color-txt-box: #424242;
+}
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin : 0;
+    border: 0;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../Fonts/MaterialIcons-Regular.ttf); /* For IE6-8 */
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(../Fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+/*url(../Fonts/MaterialIcons-Regular.woff2) format('woff2'), url(../Fonts/MaterialIcons-Regular.woff) format('woff'),*/
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+button:focus,
+button {
+    outline: none !important;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover:disabled,
+button:disabled {
+    cursor: not-allowed;
+    background-color: var(--color-btn-disabled);
+    color: var(--color-btn-disabled-text);
+}
+
+input[type='submit']:hover:disabled,
+input[type='submit']:disabled {
+    cursor: not-allowed;
+    background-color: var(--color-btn-disabled);
+    color: var(--color-btn-disabled-text);
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+.clear {
+    clear: both;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.no-select {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+/*NOTA: trovare la palette di colori*/
+.separator-upper {
+    border-top: 1px solid var(--color-tertiary);
+}
+
+.separator-bottom {
+    border-bottom: 1px solid var(--color-tertiary);
+}
+
+.separator-element {
+    height: 3px;
+    background-color: var(--color-tertiary-dark-t);
+}
+
+.separator-parallelogram {
+    background-color: var(--color-text);
+    transform: skew(-25deg);
+    margin-left: auto;
+    height: 100%;
+    width: 1rem;
+}
+
+.flex,
+.flex-column,
+.flex-row,
+.flex-align-center,
+.flex-justify-center,
+.flex-justify-start,
+.flex-justify-end,
+.flex-align-start {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.flex-justify-start {
+    justify-content: start;
+}
+
+.flex-justify-end {
+    margin-left: auto;
+    justify-content: end;
+}
+
+.flex-align-start {
+    align-items: flex-start;
+}
+
+.flex.material-icons,
+.flex-column.material-icons,
+.flex-row.material-icons,
+.flex-align-center.material-icons,
+.flex-justify-center.material-icons,
+.flex-justify-start.material-icons,
+.flex-justify-end.material-icons,
+.flex-align-start.material-icons {
+    display: flex !important;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.grid-element {
+    height: 2rem;
+    padding-top: 6px;
+    text-align: center;
+}

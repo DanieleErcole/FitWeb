@@ -1,0 +1,52 @@
+
+.perf .f-row {
+    margin-bottom: 2rem;
+}
+
+.perf .f-row > input:nth-child(2),
+.perf .f-row > select:nth-child(2) {
+    margin-left: 2rem;
+}
+
+.perf form {
+    margin-top: 0 !important;
+}
+
+.perf form > .form-sub-btn {
+    margin-right: auto;
+}
+
+@media (max-width: 800px) {
+
+    .perf .f-row {
+        flex-direction: column !important;
+    }
+
+    .perf .f-row > input,
+    .perf .f-row > select {
+        margin-left: 0 !important;
+        width: 100%;
+    }
+
+    .perf .f-row > input:first-child,
+    .perf .f-row > select:first-child {
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media (max-width: 780px) {
+
+    .perf.table-form-container {
+        height: 100% !important;
+    }
+
+}
+
+@media (max-width: 780px) {
+
+    .perf form > .form-sub-btn {
+        width: 100%
+    }
+
+}
